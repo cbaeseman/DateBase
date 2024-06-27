@@ -29,7 +29,7 @@ Clone the repository:
 
 bash
 Copy code
-git clone https://github.com/your-username/DateBase.git
+git clone https://github.com/cbaeseman/DateBase.git
 cd DateBase
 Setup PocketBase:
 
