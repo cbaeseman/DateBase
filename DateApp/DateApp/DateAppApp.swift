@@ -9,9 +9,22 @@ import SwiftUI
 
 @main
 struct DateAppApp: App {
-    var body: some Scene {
-        WindowGroup {
-            ContentView()
-        }
-    }
+    @State private var isActive: Bool = false
+       
+       var body: some Scene {
+           WindowGroup {
+               if isActive {
+                   ContentView() // Replace with your main content view
+               } else {
+                   SplashScreen()
+                       .onAppear {
+                           DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+                               withAnimation {
+                                   self.isActive = true
+                               }
+                           }
+                       }
+               }
+           }
+       }
 }
