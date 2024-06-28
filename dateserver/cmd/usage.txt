@@ -1,0 +1,56 @@
+package main
+
+import (
+    "fmt"
+    "log"
+
+    "dateapp"
+)
+
+func main() {
+    client, err := dateapp.NewDateAppClient("http://localhost:8090")
+    if err != nil {
+        log.Fatalf("Failed to create client: %v", err)
+    }
+
+    // Create a new profile
+    profile := dateapp.Profile{
+        Name:      "John Doe",
+        Age:       30,
+        Gender:    "Male",
+        Interests: "Hiking, Reading, Traveling",
+    }
+
+    createdProfile, err := client.CreateProfile(profile)
+    if err != nil {
+        log.Fatalf("Failed to create profile: %v", err)
+    }
+
+    fmt.Printf("Created Profile: %+v\n", createdProfile)
+
+    // Retrieve the profile
+    retrievedProfile, err := client.GetProfile(createdProfile.ID)
+    if err != nil {
+        log.Fatalf("Failed to retrieve profile: %v", err)
+    }
+
+    fmt.Printf("Retrieved Profile: %+v\n", retrievedProfile)
+
+    // Update the profile
+    retrievedProfile.Interests = "Hiking, Reading, Traveling, Cooking"
+    updatedProfile, err := client.UpdateProfile(*retrievedProfile)
+    if err != nil {
+        log.Fatalf("Failed to update profile: %v", err)
+    }
+
+    fmt.Printf("Updated Profile: %+v\n", updatedProfile)
+
+    // Delete the profile
+    err = client.DeleteProfile(updatedProfile.ID)
+    if err != nil {
+        log.Fatalf("Failed to delete profile: %v", err)
+    }
+
+    fmt.Println("Profile deleted successfully")
+}
+
