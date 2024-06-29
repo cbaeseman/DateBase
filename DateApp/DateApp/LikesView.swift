@@ -2,7 +2,7 @@
 //  LikesView.swift
 //  DateApp
 //
-//  Created by Chip on 6/26/24.
+//  Created by Clifford Baeseman on 6/26/24.
 //
 
 import SwiftUI

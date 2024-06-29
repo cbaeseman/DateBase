@@ -16,6 +16,8 @@
 		45A49ECF2C2D1295006D03EC /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A49ECE2C2D1295006D03EC /* ProfileView.swift */; };
 		45A49ED12C2D14CB006D03EC /* LikesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A49ED02C2D14CB006D03EC /* LikesView.swift */; };
 		45A49ED32C2D15B2006D03EC /* MessagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A49ED22C2D15B2006D03EC /* MessagesView.swift */; };
+		45A49ED52C2F9130006D03EC /* PersonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A49ED42C2F9130006D03EC /* PersonView.swift */; };
+		45A49ED72C2F926D006D03EC /* FooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A49ED62C2F926D006D03EC /* FooterView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +31,8 @@
 		45A49ECE2C2D1295006D03EC /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		45A49ED02C2D14CB006D03EC /* LikesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikesView.swift; sourceTree = "<group>"; };
 		45A49ED22C2D15B2006D03EC /* MessagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesView.swift; sourceTree = "<group>"; };
+		45A49ED42C2F9130006D03EC /* PersonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonView.swift; sourceTree = "<group>"; };
+		45A49ED62C2F926D006D03EC /* FooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FooterView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +65,7 @@
 		45A49EB72C2CF8B4006D03EC /* DateApp */ = {
 			isa = PBXGroup;
 			children = (
+				45A49ED42C2F9130006D03EC /* PersonView.swift */,
 				45A49EB82C2CF8B4006D03EC /* DateAppApp.swift */,
 				45A49ECA2C2D0C18006D03EC /* SplashView.swift */,
 				45A49EBA2C2CF8B4006D03EC /* ContentView.swift */,
@@ -70,6 +75,7 @@
 				45A49ECE2C2D1295006D03EC /* ProfileView.swift */,
 				45A49ED02C2D14CB006D03EC /* LikesView.swift */,
 				45A49ED22C2D15B2006D03EC /* MessagesView.swift */,
+				45A49ED62C2F926D006D03EC /* FooterView.swift */,
 			);
 			path = DateApp;
 			sourceTree = "<group>";
@@ -158,7 +164,9 @@
 				45A49ED32C2D15B2006D03EC /* MessagesView.swift in Sources */,
 				45A49ECB2C2D0C18006D03EC /* SplashView.swift in Sources */,
 				45A49EB92C2CF8B4006D03EC /* DateAppApp.swift in Sources */,
+				45A49ED72C2F926D006D03EC /* FooterView.swift in Sources */,
 				45A49ED12C2D14CB006D03EC /* LikesView.swift in Sources */,
+				45A49ED52C2F9130006D03EC /* PersonView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
